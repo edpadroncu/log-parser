@@ -1,0 +1,7 @@
+node_modules/
+package-lock\.json
+parser\.js
+src/*\.js
+src/model/*\.js
+src/service/*\.js
+
