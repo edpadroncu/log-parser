@@ -22,7 +22,7 @@ export class OutputLog {
         try {
             return Date.parse(matcher[0])
         } catch (error) {
-            throw new Error(`[Error] - Coudn't get timestamp`);
+            throw new Error(`[Error] - Coudn't get timestamp from: ${str}`);
         }
     }
 
@@ -38,7 +38,7 @@ export class OutputLog {
             const obj = JSON.parse(matcher[0])
             return new OutputLog(obj.timestamp, obj.transactionId, obj.err)
         } catch (error) {
-            throw new Error(`[Error] - Coudn't parse str to OutputLog obj`);
+            throw new Error(`[Error] - Coudn't parse to OutputLog object from: ${str}`);
         }
     }
 
